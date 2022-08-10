@@ -1,0 +1,1 @@
+document.querySelector(".hi-class").innerText='hello'
