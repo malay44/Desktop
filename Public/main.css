@@ -4,3 +4,7 @@ h1{
 .hi-class{
     background-color: black;
 }
+
+body{
+    margin: 0;
+}
