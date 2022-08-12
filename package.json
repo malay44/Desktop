@@ -10,6 +10,7 @@
   "author": "Malay Patel",
   "license": "ISC",
   "dependencies": {
+    "dat.gui": "^0.7.9",
     "express": "^4.18.1",
     "nodemon": "^2.0.19",
     "three": "^0.143.0"
