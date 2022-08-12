@@ -1,7 +1,10 @@
-import * as THREE from "https://unpkg.com/three@0.143.0/build/three.module.js";
-// import {OrbitControls} from "https://unpkg.com/three@0.143.0/examples/jsm/controls/OrbitControls.js";
-// import * as dat from "https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.js"
-import * as dat from "/dat.gui/build/dat.gui.module.js"
+// import * as THREE from "/three.module.js";
+import * as THREE from "https://unpkg.com/three@0.126.1/build/three.module.js";
+import {OrbitControls} from "https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js";
+// const {OrbitControls} = require('/jsm/controls/OrbitControls.js')
+// import {OrbitControls} from "/jsm/controls/OrbitControls.js";
+console.log(OrbitControls);
+import * as dat from "/dat.gui/build/dat.gui.module.js";
 
 
 //<------------------------------- gui starts ------------------------------->
@@ -18,9 +21,9 @@ gui.add(world.plane, "width", 1, 20).onChange(regeneratePlane)
 
 gui.add(world.plane, "height", 1, 20).onChange(regeneratePlane)
 
-gui.add(world.plane, "widthSegments", 1, 20).onChange(regeneratePlane)
+gui.add(world.plane, "widthSegments", 1, 50).onChange(regeneratePlane)
 
-gui.add(world.plane, "heightSegments", 1, 20).onChange(regeneratePlane)
+gui.add(world.plane, "heightSegments", 1, 50).onChange(regeneratePlane)
 
 function regeneratePlane() {
   planeMesh.geometry.dispose()
